@@ -361,7 +361,7 @@ function AboutSplit() {
               </div>
               <div className="absolute -bottom-8 -left-6 sm:-left-10 w-[45%] overflow-hidden border-4 border-black shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&q=80"
+                  src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&q=80"
                   alt="Recovery crew at work"
                   className="w-full aspect-square object-cover object-center"
                   loading="lazy"
@@ -394,10 +394,10 @@ function ServicesGrid() {
 
   const serviceImages = [
     'https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=800&q=80',
-    'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80',
+    'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80',
     'https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=800&q=80',
     'https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=800&q=80',
-    'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80',
+    'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80',
     'https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=800&q=80',
   ];
 
