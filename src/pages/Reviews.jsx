@@ -24,21 +24,21 @@ function Reviews() {
 
   // Find the featured review: highest-rated, then longest text
   const featuredReview = useMemo(() => {
-    if (!reviews.items || reviews.items.length === 0) return null;
-    const sorted = [...reviews.items].sort((a, b) => {
+    if (!reviews?.items || [] || (reviews?.items || []).length === 0) return null;
+    const sorted = [...reviews?.items || []].sort((a, b) => {
       if (b.rating !== a.rating) return b.rating - a.rating;
       return (b.text?.length || 0) - (a.text?.length || 0);
     });
     return sorted[0];
-  }, [reviews.items]);
+  }, [reviews?.items || []]);
 
   // Remaining reviews (everything except the featured one)
   const remainingReviews = useMemo(() => {
-    if (!featuredReview) return reviews.items;
-    return reviews.items.filter(
+    if (!featuredReview) return reviews?.items || [];
+    return (reviews?.items || []).filter(
       (r) => r.name !== featuredReview.name || r.text !== featuredReview.text
     );
-  }, [reviews.items, featuredReview]);
+  }, [reviews?.items || [], featuredReview]);
 
   const INITIAL_SHOW_COUNT = 6;
   const visibleReviews = showAll
@@ -48,15 +48,15 @@ function Reviews() {
 
   // Calculate total reviews and average for the social proof banner
   const totalStars = useMemo(() => {
-    return reviews.ratingBreakdown.reduce((sum, item) => sum + item.count, 0);
-  }, [reviews.ratingBreakdown]);
+    return reviews?.ratingBreakdown || {}.reduce((sum, item) => sum + item.count, 0);
+  }, [reviews?.ratingBreakdown || {}]);
 
   return (
     <PageTransition>
       <PageHero
         label="Client Reviews"
-        title={reviews.heroTitle}
-        subtitle={reviews.heroSubtitle}
+        title={reviews?.heroTitle || "Client Reviews"}
+        subtitle={reviews?.heroSubtitle || ""}
         image={heroImage}
         imageAlt={`${business.name} client testimonials`}
       />
@@ -218,7 +218,7 @@ function Reviews() {
 
               {/* Rating Bars */}
               <div className="space-y-3">
-                {reviews.ratingBreakdown.map((item) => {
+                {reviews?.ratingBreakdown || {}.map((item) => {
                   const percentage =
                     totalStars > 0
                       ? (item.count / totalStars) * 100
