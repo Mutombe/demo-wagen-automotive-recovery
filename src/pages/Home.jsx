@@ -179,7 +179,7 @@ function HeroSection() {
                 className={`font-heading font-bold leading-[0.88] tracking-tight ${
                   word === 'ON OUR WAY.' ? 'text-red-600' : 'text-white'
                 }`}
-                style={{ fontSize: 'clamp(3rem, 12vw, 10rem)' }}
+                style={{ fontSize: 'clamp(3rem, 7vw, 4.5rem)' }}
               >
                 {word}
               </h1>
@@ -353,7 +353,7 @@ function AboutSplit() {
             <div className="relative">
               <div className="overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1562065198-8549f0dca72d?w=800&q=80"
+                  src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=800&q=80"
                   alt="Wagen recovery truck on highway"
                   className="w-full aspect-[4/5] object-cover object-center"
                   loading="lazy"
@@ -393,12 +393,12 @@ function ServicesGrid() {
   const { servicesPreview } = siteData;
 
   const serviceImages = [
-    'https://images.unsplash.com/photo-1562065198-8549f0dca72d?w=800&q=80',
+    'https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=800&q=80',
     'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80',
-    'https://images.unsplash.com/photo-1549317661-bd32c8ce0220?w=800&q=80',
-    'https://images.unsplash.com/photo-1562065198-8549f0dca72d?w=800&q=80',
+    'https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=800&q=80',
+    'https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=800&q=80',
     'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80',
-    'https://images.unsplash.com/photo-1549317661-bd32c8ce0220?w=800&q=80',
+    'https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=800&q=80',
   ];
 
   return (
@@ -675,7 +675,7 @@ function FleetCoverage() {
           >
             <div className="relative overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1549317661-bd32c8ce0220?w=800&q=80"
+                src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=800&q=80"
                 alt="Wagen fleet coverage area"
                 className="w-full aspect-square object-cover object-center"
                 loading="lazy"
@@ -847,7 +847,7 @@ function CTASection() {
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="font-heading font-bold text-white leading-[0.88] mb-8" style={{ fontSize: 'clamp(2.5rem, 8vw, 7rem)' }}>
+          <h2 className="font-heading font-bold text-white leading-[0.88] mb-8" style={{ fontSize: 'clamp(2.5rem, 7vw, 4.5rem)' }}>
             DON'T<br />
             <span className="text-red-600">PANIC.</span>
           </h2>

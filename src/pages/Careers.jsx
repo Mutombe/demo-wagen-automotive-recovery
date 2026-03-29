@@ -130,7 +130,7 @@ function Careers() {
             {/* Image Column with Gold Accent */}
             <SectionReveal direction="right">
               <div className="relative">
-                <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-black/10">
+                <div className="relative rounded-none overflow-hidden shadow-2xl shadow-black/10">
                   <img
                     src={careers.cultureImage}
                     alt={careers.cultureImageAlt}
@@ -152,7 +152,7 @@ function Careers() {
                   const IconComp = iconMap[item.iconName] || iconMap.Users;
                   return (
                     <div key={item.title} className="flex gap-4 sm:gap-5">
-                      <div className={`w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center shrink-0 ${BENEFIT_COLORS[index % BENEFIT_COLORS.length].bg}`}>
+                      <div className={`w-12 h-12 sm:w-14 sm:h-14 rounded-none flex items-center justify-center shrink-0 ${BENEFIT_COLORS[index % BENEFIT_COLORS.length].bg}`}>
                         <IconComp
                           size={26}
                           className={BENEFIT_COLORS[index % BENEFIT_COLORS.length].text}
@@ -176,7 +176,7 @@ function Careers() {
 
           {/* Culture Tagline Banner */}
           <SectionReveal>
-            <div className="relative rounded-2xl overflow-hidden aspect-[21/9]">
+            <div className="relative rounded-none overflow-hidden aspect-[21/9]">
               <img
                 src={careers.cultureImage}
                 alt={careers.cultureImageAlt}
@@ -246,10 +246,10 @@ function Careers() {
               const colorSet = BENEFIT_COLORS[index % BENEFIT_COLORS.length];
               return (
                 <SectionReveal key={benefit.title} delay={index * 0.08}>
-                  <div className="bg-white rounded-2xl p-5 sm:p-6 border border-earth-100 h-full group hover:shadow-lg hover:border-earth-200 transition-all duration-300 card-hover-lift">
+                  <div className="bg-white rounded-none p-5 sm:p-6 border border-earth-100 h-full group hover:shadow-lg hover:border-earth-200 transition-all duration-300 card-hover-lift">
                     <div className="flex gap-4">
                       <div
-                        className={`w-12 h-12 sm:w-14 sm:h-14 ${colorSet.bg} rounded-xl flex items-center justify-center shrink-0 ring-1 ${colorSet.ring} group-hover:scale-110 transition-transform duration-300`}
+                        className={`w-12 h-12 sm:w-14 sm:h-14 ${colorSet.bg} rounded-none flex items-center justify-center shrink-0 ring-1 ${colorSet.ring} group-hover:scale-110 transition-transform duration-300`}
                       >
                         <IconComp
                           size={24}
@@ -298,7 +298,7 @@ function Careers() {
               return (
                 <SectionReveal key={job.id} delay={index * 0.06}>
                   <div
-                    className={`rounded-2xl overflow-hidden transition-all duration-300 ${
+                    className={`rounded-none overflow-hidden transition-all duration-300 ${
                       isExpanded
                         ? 'bg-white shadow-xl shadow-black/8 border-2 border-gold-500/20'
                         : 'bg-earth-50 border border-earth-100 hover:shadow-md hover:border-earth-200'
@@ -389,7 +389,7 @@ function Careers() {
                               </ul>
 
                               {/* Apply Buttons */}
-                              <div className="flex flex-wrap gap-3 p-4 sm:p-5 bg-earth-50 rounded-xl">
+                              <div className="flex flex-wrap gap-3 p-4 sm:p-5 bg-earth-50 rounded-none">
                                 <button
                                   onClick={() => handleApply(job.title)}
                                   className="btn-primary text-sm flex-1 sm:flex-none justify-center"
@@ -399,7 +399,7 @@ function Careers() {
                                 </button>
                                 <button
                                   onClick={() => handleWhatsApp(job.title)}
-                                  className="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-500 text-white px-5 py-3 rounded-lg text-sm font-semibold transition-all duration-300 hover:-translate-y-0.5 flex-1 sm:flex-none"
+                                  className="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-500 text-white px-5 py-3 rounded-none text-sm font-semibold transition-all duration-300 hover:-translate-y-0.5 flex-1 sm:flex-none"
                                 >
                                   <WhatsappLogo size={18} weight="fill" />
                                   Inquire via WhatsApp
@@ -445,9 +445,9 @@ function Careers() {
               whileInView={{ scale: 1, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="glass-dark rounded-3xl p-8 sm:p-10 md:p-14"
+              className="glass-dark rounded-none p-8 sm:p-10 md:p-14"
             >
-              <div className="w-16 h-16 bg-gold-500/20 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-gold-500/30">
+              <div className="w-16 h-16 bg-gold-500/20 rounded-none flex items-center justify-center mx-auto mb-6 border border-gold-500/30">
                 <PaperPlaneTilt size={32} className="text-gold-400" weight="fill" />
               </div>
 
@@ -473,7 +473,7 @@ function Careers() {
                     value={quickEmail}
                     onChange={(e) => setQuickEmail(e.target.value)}
                     placeholder="Enter your email"
-                    className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/15 rounded-lg text-white placeholder:text-white/30 text-sm focus:outline-none focus:border-gold-500/50 focus:ring-1 focus:ring-gold-500/30 transition-all"
+                    className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/15 rounded-none text-white placeholder:text-white/30 text-sm focus:outline-none focus:border-gold-500/50 focus:ring-1 focus:ring-gold-500/30 transition-all"
                   />
                 </div>
                 <button
@@ -513,7 +513,7 @@ function Careers() {
             </div>
             <button
               onClick={() => handleApply('General Application')}
-              className="inline-flex items-center gap-2 bg-navy-900 hover:bg-navy-800 text-white px-6 sm:px-8 py-3 sm:py-3.5 rounded-lg font-semibold transition-all duration-300 hover:-translate-y-0.5 text-sm sm:text-base whitespace-nowrap shrink-0"
+              className="inline-flex items-center gap-2 bg-navy-900 hover:bg-navy-800 text-white px-6 sm:px-8 py-3 sm:py-3.5 rounded-none font-semibold transition-all duration-300 hover:-translate-y-0.5 text-sm sm:text-base whitespace-nowrap shrink-0"
             >
               <PaperPlaneTilt size={18} />
               {careers.generalApplicationCta}

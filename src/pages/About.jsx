@@ -50,12 +50,12 @@ function About() {
             <SectionReveal direction="right">
               <div className="relative lg:-mr-12 xl:-mr-16">
                 {/* Decorative frame accent behind image */}
-                <div className="absolute -top-4 -left-4 w-32 h-32 border-2 border-gold-500/20 rounded-2xl hidden sm:block" />
+                <div className="absolute -top-4 -left-4 w-32 h-32 border-2 border-gold-500/20 rounded-none hidden sm:block" />
 
                 <img
                   src={about.storyImage}
                   alt={about.storyImageAlt}
-                  className="rounded-2xl w-full aspect-[4/3] object-cover object-center relative z-10 shadow-2xl shadow-navy-900/10"
+                  className="rounded-none w-full aspect-[4/3] object-cover object-center relative z-10 shadow-2xl shadow-navy-900/10"
                   loading="lazy"
                 />
 
@@ -67,9 +67,9 @@ function About() {
                   transition={{ duration: 0.6, delay: 0.3 }}
                   className="absolute -bottom-5 -right-3 sm:-bottom-6 sm:-right-5 z-20 hidden sm:block"
                 >
-                  <div className="bg-navy-900 text-white px-5 py-4 sm:px-7 sm:py-5 rounded-2xl shadow-xl border border-white/10 backdrop-blur-sm">
+                  <div className="bg-navy-900 text-white px-5 py-4 sm:px-7 sm:py-5 rounded-none shadow-xl border border-white/10 backdrop-blur-sm">
                     <div className="flex items-center gap-3">
-                      <div className="w-11 h-11 sm:w-12 sm:h-12 bg-gold-500/15 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <div className="w-11 h-11 sm:w-12 sm:h-12 bg-gold-500/15 rounded-none flex items-center justify-center flex-shrink-0">
                         <Buildings size={24} className="text-gold-400" />
                       </div>
                       <div>
@@ -92,7 +92,7 @@ function About() {
                   transition={{ duration: 0.6, delay: 0.5 }}
                   className="absolute -top-5 -right-3 sm:-top-4 sm:right-8 z-20 hidden sm:block"
                 >
-                  <div className="bg-gold-500 text-white px-4 py-3 sm:px-5 sm:py-4 rounded-xl shadow-lg">
+                  <div className="bg-gold-500 text-white px-4 py-3 sm:px-5 sm:py-4 rounded-none shadow-lg">
                     <div className="text-xl sm:text-2xl font-bold leading-none">
                       {business.yearsExperience}
                     </div>
@@ -165,7 +165,7 @@ function About() {
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionReveal>
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-gold-500/15 rounded-2xl mb-6">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gold-500/15 rounded-none mb-6">
                 <Target size={32} className="text-gold-400" weight="duotone" />
               </div>
               <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-gold-400 mb-4">
@@ -185,13 +185,13 @@ function About() {
       <section className="section-padding bg-earth-50">
         <div className="max-w-5xl mx-auto">
           <SectionReveal>
-            <div className="relative bg-white rounded-3xl p-8 sm:p-12 border border-earth-100 shadow-lg shadow-navy-900/[0.03] overflow-hidden">
+            <div className="relative bg-white rounded-none p-8 sm:p-12 border border-earth-100 shadow-lg shadow-navy-900/[0.03] overflow-hidden">
               {/* Decorative corner accent */}
               <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-gold-500/8 to-transparent rounded-bl-full" />
               <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-navy-900/5 to-transparent rounded-tr-full" />
 
               <div className="relative flex flex-col sm:flex-row items-start gap-6 sm:gap-8">
-                <div className="w-14 h-14 sm:w-16 sm:h-16 bg-navy-900 rounded-2xl flex items-center justify-center flex-shrink-0">
+                <div className="w-14 h-14 sm:w-16 sm:h-16 bg-navy-900 rounded-none flex items-center justify-center flex-shrink-0">
                   <Eye size={28} className="text-gold-400" weight="duotone" />
                 </div>
                 <div className="flex-1">
@@ -232,14 +232,14 @@ function About() {
               const num = String(index + 1).padStart(2, '0');
               return (
                 <SectionReveal key={value.title} delay={index * 0.1}>
-                  <div className="relative group bg-white rounded-2xl p-5 sm:p-8 border border-earth-100 hover:border-gold-200 hover:shadow-lg hover:shadow-gold-500/5 transition-all duration-300 h-full overflow-hidden">
+                  <div className="relative group bg-white rounded-none p-5 sm:p-8 border border-earth-100 hover:border-gold-200 hover:shadow-lg hover:shadow-gold-500/5 transition-all duration-300 h-full overflow-hidden">
                     {/* Large faded number background */}
                     <span className="absolute top-2 right-3 sm:top-3 sm:right-4 text-5xl sm:text-7xl font-bold text-navy-900/[0.04] leading-none select-none pointer-events-none">
                       {num}
                     </span>
 
                     <div className="relative z-10">
-                      <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gold-500/10 group-hover:bg-gold-500/15 rounded-2xl flex items-center justify-center mb-4 sm:mb-6 transition-colors">
+                      <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gold-500/10 group-hover:bg-gold-500/15 rounded-none flex items-center justify-center mb-4 sm:mb-6 transition-colors">
                         <IconComp
                           size={24}
                           className="text-gold-600"
@@ -323,7 +323,7 @@ function About() {
                       {/* LEFT content (desktop only — even items) */}
                       <div className={`hidden sm:block sm:w-1/2 ${isEven ? 'pr-12 text-right' : ''}`}>
                         {isEven && (
-                          <div className="bg-earth-50 rounded-2xl p-6 border border-earth-100 hover:shadow-lg hover:shadow-navy-900/5 transition-shadow">
+                          <div className="bg-earth-50 rounded-none p-6 border border-earth-100 hover:shadow-lg hover:shadow-navy-900/5 transition-shadow">
                             <span className="text-2xl font-bold text-gold-500">{milestone.year}</span>
                             <h4 className="text-navy-900 font-bold text-lg mt-2 mb-2">{milestone.title}</h4>
                             <p className="text-steel-500 text-sm leading-relaxed">{milestone.desc}</p>
@@ -356,7 +356,7 @@ function About() {
                       {/* RIGHT content (desktop only — odd items) */}
                       <div className={`hidden sm:block sm:w-1/2 ${!isEven ? 'pl-12' : ''}`}>
                         {!isEven && (
-                          <div className="bg-earth-50 rounded-2xl p-6 border border-earth-100 hover:shadow-lg hover:shadow-navy-900/5 transition-shadow">
+                          <div className="bg-earth-50 rounded-none p-6 border border-earth-100 hover:shadow-lg hover:shadow-navy-900/5 transition-shadow">
                             <span className="text-2xl font-bold text-gold-500">{milestone.year}</span>
                             <h4 className="text-navy-900 font-bold text-lg mt-2 mb-2">{milestone.title}</h4>
                             <p className="text-steel-500 text-sm leading-relaxed">{milestone.desc}</p>
@@ -366,7 +366,7 @@ function About() {
 
                       {/* Mobile content — always to the right of the dot */}
                       <div className="sm:hidden flex-1 ml-4">
-                        <div className="bg-earth-50 rounded-2xl p-4 border border-earth-100">
+                        <div className="bg-earth-50 rounded-none p-4 border border-earth-100">
                           <span className="text-lg font-bold text-gold-500">{milestone.year}</span>
                           <h4 className="text-navy-900 font-bold text-base mt-1 mb-1">{milestone.title}</h4>
                           <p className="text-steel-500 text-xs leading-relaxed">{milestone.desc}</p>
@@ -423,14 +423,14 @@ function About() {
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link
                   to="/contact"
-                  className="inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-400 text-navy-900 px-8 py-4 rounded-xl font-semibold transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-gold-500/25 text-sm sm:text-base"
+                  className="inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-400 text-navy-900 px-8 py-4 rounded-none font-semibold transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-gold-500/25 text-sm sm:text-base"
                 >
                   {about.ctaCta}
                   <ArrowRight size={20} weight="bold" />
                 </Link>
                 <Link
                   to="/projects"
-                  className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/15 text-white border border-white/20 px-8 py-4 rounded-xl font-semibold transition-all hover:-translate-y-0.5 text-sm sm:text-base backdrop-blur-sm"
+                  className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/15 text-white border border-white/20 px-8 py-4 rounded-none font-semibold transition-all hover:-translate-y-0.5 text-sm sm:text-base backdrop-blur-sm"
                 >
                   View Our Work
                   <ArrowRight size={20} />
@@ -456,9 +456,9 @@ function TeamCard({ member, businessName }) {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <div className="relative mb-4 sm:mb-6 overflow-hidden rounded-2xl">
+      <div className="relative mb-4 sm:mb-6 overflow-hidden rounded-none">
         {/* Gold ring border */}
-        <div className="p-[3px] bg-gradient-to-b from-gold-400 via-gold-500 to-gold-600 rounded-2xl">
+        <div className="p-[3px] bg-gradient-to-b from-gold-400 via-gold-500 to-gold-600 rounded-none">
           <div className="rounded-[13px] overflow-hidden aspect-[3/4] relative">
             <img
               src={member.image}

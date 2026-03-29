@@ -141,7 +141,7 @@ function Services() {
             <div className="max-w-2xl">
               <SectionReveal>
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-14 h-14 bg-gold-500/20 backdrop-blur-sm rounded-xl flex items-center justify-center border border-gold-500/30">
+                  <div className="w-14 h-14 bg-gold-500/20 backdrop-blur-sm rounded-none flex items-center justify-center border border-gold-500/30">
                     <FirstIcon size={28} className="text-gold-400" weight="fill" />
                   </div>
                   <span className="text-gold-400 text-sm font-semibold uppercase tracking-wider">
@@ -274,7 +274,7 @@ function Services() {
                     </p>
                     <Link
                       to="/contact"
-                      className="inline-flex items-center gap-2 bg-navy-900 hover:bg-navy-800 text-white px-6 sm:px-8 py-3 sm:py-3.5 rounded-lg font-semibold transition-all duration-300 hover:-translate-y-0.5 text-sm sm:text-base"
+                      className="inline-flex items-center gap-2 bg-navy-900 hover:bg-navy-800 text-white px-6 sm:px-8 py-3 sm:py-3.5 rounded-none font-semibold transition-all duration-300 hover:-translate-y-0.5 text-sm sm:text-base"
                     >
                       Get a Free Consultation
                       <ArrowRight size={18} />
@@ -309,7 +309,7 @@ function Services() {
                     className={isReversed ? 'lg:order-2' : ''}
                   >
                     <div className="relative group">
-                      <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-black/10">
+                      <div className="relative rounded-none overflow-hidden shadow-2xl shadow-black/10">
                         <img
                           src={service.image}
                           alt={`${service.title} services by ${business.name} in ${business.city}`}
@@ -321,13 +321,13 @@ function Services() {
                       </div>
                       {/* Badge */}
                       <div className="absolute top-4 left-4">
-                        <div className="bg-gold-500 text-white px-3 sm:px-4 py-2 rounded-lg flex items-center gap-2 shadow-lg shadow-gold-500/30">
+                        <div className="bg-gold-500 text-white px-3 sm:px-4 py-2 rounded-none flex items-center gap-2 shadow-lg shadow-gold-500/30">
                           <IconComp size={18} weight="fill" />
                           <span className="text-sm font-bold">{numberStr}</span>
                         </div>
                       </div>
                       {/* Decorative corner accent */}
-                      <div className={`absolute -bottom-3 ${isReversed ? '-left-3' : '-right-3'} w-24 h-24 border-2 border-gold-500/20 rounded-2xl -z-10`} />
+                      <div className={`absolute -bottom-3 ${isReversed ? '-left-3' : '-right-3'} w-24 h-24 border-2 border-gold-500/20 rounded-none -z-10`} />
                     </div>
                   </SectionReveal>
 
@@ -339,7 +339,7 @@ function Services() {
                     <div>
                       {/* Icon + Label */}
                       <div className="flex items-center gap-3 mb-5">
-                        <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gold-500/10 rounded-xl flex items-center justify-center">
+                        <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gold-500/10 rounded-none flex items-center justify-center">
                           <IconComp size={26} className="text-gold-600" weight="duotone" />
                         </div>
                         <span className="text-gold-600 text-xs font-semibold uppercase tracking-wider">

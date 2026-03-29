@@ -138,13 +138,13 @@ function Contact() {
                 href={item.href}
                 target={item.label === 'WhatsApp' || item.label === 'Address' ? '_blank' : undefined}
                 rel={item.label === 'WhatsApp' || item.label === 'Address' ? 'noopener noreferrer' : undefined}
-                className={`group block bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-lg shadow-black/5 border border-earth-100 hover:shadow-xl transition-all duration-300 border-l-4 ${item.borderColor} relative overflow-hidden`}
+                className={`group block bg-white rounded-none sm:rounded-none p-4 sm:p-6 shadow-lg shadow-black/5 border border-earth-100 hover:shadow-xl transition-all duration-300 border-l-4 ${item.borderColor} relative overflow-hidden`}
               >
                 {/* Hover bottom-border expansion */}
                 <div className={`absolute bottom-0 left-0 right-0 h-0 group-hover:h-[3px] ${item.bg} transition-all duration-300`} />
 
                 <div
-                  className={`w-10 h-10 sm:w-12 sm:h-12 ${item.bg} rounded-lg sm:rounded-xl flex items-center justify-center mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300`}
+                  className={`w-10 h-10 sm:w-12 sm:h-12 ${item.bg} rounded-none sm:rounded-none flex items-center justify-center mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300`}
                 >
                   <item.icon
                     size={20}
@@ -173,7 +173,7 @@ function Contact() {
             {/* Form container — gold accent line + geometric background */}
             <div className="lg:col-span-3">
               <SectionReveal direction="right">
-                <div className="relative bg-earth-50/50 border border-earth-100 rounded-2xl overflow-hidden">
+                <div className="relative bg-earth-50/50 border border-earth-100 rounded-none overflow-hidden">
                   {/* Decorative vertical gold line on left */}
                   <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-gradient-to-b from-gold-400 via-gold-500 to-gold-300" />
 
@@ -247,7 +247,7 @@ function Contact() {
                             onChange={handleChange}
                             onFocus={() => setFocusedField('service')}
                             onBlur={() => setFocusedField(null)}
-                            className="peer w-full bg-white/60 border-2 border-earth-200 focus:border-gold-500 focus:ring-4 focus:ring-gold-500/10 rounded-xl px-5 pt-6 pb-2.5 text-navy-900 text-sm outline-none transition-all appearance-none cursor-pointer"
+                            className="peer w-full bg-white/60 border-2 border-earth-200 focus:border-gold-500 focus:ring-4 focus:ring-gold-500/10 rounded-none px-5 pt-6 pb-2.5 text-navy-900 text-sm outline-none transition-all appearance-none cursor-pointer"
                           >
                             <option value="">Select a service</option>
                             {services.items.map((s) => (
@@ -283,7 +283,7 @@ function Contact() {
                           onBlur={() => setFocusedField(null)}
                           required
                           rows={5}
-                          className="peer w-full bg-white/60 border-2 border-earth-200 focus:border-gold-500 focus:ring-4 focus:ring-gold-500/10 rounded-xl px-5 pt-7 pb-3 text-navy-900 text-sm outline-none transition-all resize-none"
+                          className="peer w-full bg-white/60 border-2 border-earth-200 focus:border-gold-500 focus:ring-4 focus:ring-gold-500/10 rounded-none px-5 pt-7 pb-3 text-navy-900 text-sm outline-none transition-all resize-none"
                         />
                         <label
                           htmlFor="message"
@@ -335,7 +335,7 @@ function Contact() {
                         type="submit"
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.98 }}
-                        className={`w-full flex items-center justify-center gap-2.5 py-4 rounded-xl font-semibold text-white transition-all text-sm sm:text-base shadow-lg ${
+                        className={`w-full flex items-center justify-center gap-2.5 py-4 rounded-none font-semibold text-white transition-all text-sm sm:text-base shadow-lg ${
                           sendMethod === 'whatsapp'
                             ? 'bg-green-600 hover:bg-green-500 shadow-green-600/20'
                             : 'bg-gold-500 hover:bg-gold-400 shadow-gold-500/20'
@@ -363,13 +363,13 @@ function Contact() {
             <div className="lg:col-span-2 space-y-4 sm:space-y-6">
               {/* Business Hours */}
               <SectionReveal direction="left">
-                <div className="bg-navy-900 text-white rounded-2xl p-6 sm:p-8 relative overflow-hidden">
+                <div className="bg-navy-900 text-white rounded-none p-6 sm:p-8 relative overflow-hidden">
                   {/* Subtle radial accent */}
                   <div className="absolute -top-12 -right-12 w-32 h-32 bg-gold-500/5 rounded-full blur-2xl" />
 
                   <div className="relative">
                     <div className="flex items-center gap-3 mb-4 sm:mb-6">
-                      <div className="w-10 h-10 bg-gold-500/15 rounded-xl flex items-center justify-center">
+                      <div className="w-10 h-10 bg-gold-500/15 rounded-none flex items-center justify-center">
                         <Clock size={20} className="text-gold-400" />
                       </div>
                       <h3 className="text-base sm:text-lg font-bold">Business Hours</h3>
@@ -399,16 +399,16 @@ function Contact() {
 
               {/* Quick Contact — with colored left borders */}
               <SectionReveal direction="left" delay={0.1}>
-                <div className="bg-earth-50 rounded-2xl p-6 sm:p-8 border border-earth-100">
+                <div className="bg-earth-50 rounded-none p-6 sm:p-8 border border-earth-100">
                   <h3 className="text-base sm:text-lg font-bold text-navy-900 mb-4">
                     Quick Contact
                   </h3>
                   <div className="space-y-3 sm:space-y-4">
                     <a
                       href={`tel:${business.phoneRaw}`}
-                      className="group flex items-center gap-3 p-3 rounded-xl bg-white hover:shadow-md transition-all border-l-4 border-blue-500 hover:border-l-[6px]"
+                      className="group flex items-center gap-3 p-3 rounded-none bg-white hover:shadow-md transition-all border-l-4 border-blue-500 hover:border-l-[6px]"
                     >
-                      <div className="w-9 h-9 sm:w-10 sm:h-10 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <div className="w-9 h-9 sm:w-10 sm:h-10 bg-blue-50 rounded-none flex items-center justify-center flex-shrink-0">
                         <Phone size={18} className="text-blue-500" />
                       </div>
                       <div className="min-w-0">
@@ -422,9 +422,9 @@ function Contact() {
                       href={`https://wa.me/${business.whatsappNumber}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group flex items-center gap-3 p-3 rounded-xl bg-white hover:shadow-md transition-all border-l-4 border-green-500 hover:border-l-[6px]"
+                      className="group flex items-center gap-3 p-3 rounded-none bg-white hover:shadow-md transition-all border-l-4 border-green-500 hover:border-l-[6px]"
                     >
-                      <div className="w-9 h-9 sm:w-10 sm:h-10 bg-green-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <div className="w-9 h-9 sm:w-10 sm:h-10 bg-green-50 rounded-none flex items-center justify-center flex-shrink-0">
                         <WhatsappLogo
                           size={18}
                           className="text-green-500"
@@ -440,9 +440,9 @@ function Contact() {
                     </a>
                     <a
                       href={`mailto:${business.email}`}
-                      className="group flex items-center gap-3 p-3 rounded-xl bg-white hover:shadow-md transition-all border-l-4 border-red-500 hover:border-l-[6px]"
+                      className="group flex items-center gap-3 p-3 rounded-none bg-white hover:shadow-md transition-all border-l-4 border-red-500 hover:border-l-[6px]"
                     >
-                      <div className="w-9 h-9 sm:w-10 sm:h-10 bg-red-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <div className="w-9 h-9 sm:w-10 sm:h-10 bg-red-50 rounded-none flex items-center justify-center flex-shrink-0">
                         <Envelope size={18} className="text-red-500" />
                       </div>
                       <div className="min-w-0">
@@ -462,9 +462,9 @@ function Contact() {
                   href={`https://www.google.com/maps?q=${business.coordinates.lat},${business.coordinates.lng}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 bg-gold-500 hover:bg-gold-400 text-white p-4 rounded-2xl transition-all hover:-translate-y-0.5 shadow-lg shadow-gold-500/15"
+                  className="flex items-center gap-3 bg-gold-500 hover:bg-gold-400 text-white p-4 rounded-none transition-all hover:-translate-y-0.5 shadow-lg shadow-gold-500/15"
                 >
-                  <div className="w-10 h-10 bg-white/15 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 bg-white/15 rounded-none flex items-center justify-center flex-shrink-0">
                     <NavigationArrow size={20} weight="fill" />
                   </div>
                   <div>
@@ -487,7 +487,7 @@ function Contact() {
         <SectionReveal>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
             <h3 className="text-xl sm:text-2xl font-bold text-navy-900 mb-4 sm:mb-6 flex items-center gap-3">
-              <div className="w-9 h-9 bg-gold-500/10 rounded-lg flex items-center justify-center">
+              <div className="w-9 h-9 bg-gold-500/10 rounded-none flex items-center justify-center">
                 <MapPin size={20} className="text-gold-500" />
               </div>
               Find Us
@@ -508,9 +508,9 @@ function Contact() {
 
             {/* Glassmorphic overlay card with address + directions */}
             <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 z-10 max-w-xs sm:max-w-sm">
-              <div className="bg-white/80 backdrop-blur-xl border border-white/50 rounded-2xl p-4 sm:p-5 shadow-xl shadow-black/10">
+              <div className="bg-white/80 backdrop-blur-xl border border-white/50 rounded-none p-4 sm:p-5 shadow-xl shadow-black/10">
                 <div className="flex items-start gap-3">
-                  <div className="w-9 h-9 bg-gold-500/15 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <div className="w-9 h-9 bg-gold-500/15 rounded-none flex items-center justify-center flex-shrink-0 mt-0.5">
                     <MapPin size={18} className="text-gold-600" weight="fill" />
                   </div>
                   <div className="min-w-0">
@@ -522,7 +522,7 @@ function Contact() {
                   href={`https://www.google.com/maps?q=${business.coordinates.lat},${business.coordinates.lng}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-3 flex items-center justify-center gap-2 bg-navy-900 hover:bg-navy-800 text-white text-xs font-semibold py-2.5 px-4 rounded-xl transition-colors w-full"
+                  className="mt-3 flex items-center justify-center gap-2 bg-navy-900 hover:bg-navy-800 text-white text-xs font-semibold py-2.5 px-4 rounded-none transition-colors w-full"
                 >
                   <NavigationArrow size={14} weight="fill" />
                   Get Directions
@@ -551,7 +551,7 @@ function FloatingInput({ id, label, type = 'text', required, value, onChange, on
         onFocus={onFocus}
         onBlur={onBlur}
         required={required}
-        className="peer w-full bg-white/60 border-2 border-earth-200 focus:border-gold-500 focus:ring-4 focus:ring-gold-500/10 rounded-xl px-5 pt-6 pb-2.5 text-navy-900 text-sm outline-none transition-all placeholder-transparent"
+        className="peer w-full bg-white/60 border-2 border-earth-200 focus:border-gold-500 focus:ring-4 focus:ring-gold-500/10 rounded-none px-5 pt-6 pb-2.5 text-navy-900 text-sm outline-none transition-all placeholder-transparent"
         placeholder={label}
       />
       <label

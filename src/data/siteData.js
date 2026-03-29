@@ -80,7 +80,7 @@ const siteData = {
     ctaSecondary: "Our Services",
     trustBadge: "Average Response: 25 Minutes",
     backgroundImages: [
-      { url: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=1920&q=80", alt: "Tow truck on emergency recovery mission at night" },
+      { url: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1920&q=80", alt: "Tow truck on emergency recovery mission at night" },
       { url: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1920&q=80", alt: "Vehicle breakdown on the road requiring emergency towing" },
     ],
   },
@@ -127,7 +127,7 @@ const siteData = {
 
   featuredProjects: [
     {
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80",
+      image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80",
       title: "Highway Accident Recovery",
       category: "Emergency Response",
     },
@@ -137,7 +137,7 @@ const siteData = {
       category: "Commercial Towing",
     },
     {
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80",
+      image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80",
       title: "Off-Road Vehicle Extraction",
       category: "Recovery Operations",
     },
@@ -149,7 +149,7 @@ const siteData = {
       { text: "Matter.", highlight: true },
       { text: " Call Wagen." },
     ],
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80",
     imageAlt: "Wagen recovery truck responding to an emergency call",
     experienceYears: "8,500+",
     experienceLabel: "Rescues Completed",
@@ -216,7 +216,7 @@ const siteData = {
     ],
     heroSubtitle:
       "Wagen was founded because Harare needed a recovery service that actually answered the phone at 2 AM. One that showed up fast, treated your vehicle with care, and charged you fairly.",
-    storyImage: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80",
+    storyImage: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80",
     storyImageAlt: "Wagen Automotive Recovery fleet ready for dispatch",
     storyProjectCount: "8,500+",
     storyProjectLabel: "Vehicles Rescued",
@@ -256,7 +256,7 @@ const siteData = {
       {
         name: "David Musara",
         role: "Operations Director",
-        image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=400&q=80",
+        image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=400&q=80",
       },
       {
         name: "Tatenda Ncube",
@@ -290,7 +290,7 @@ const siteData = {
         iconName: "Car",
         title: "Vehicle Recovery",
         slug: "vehicle-recovery",
-        image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80",
+        image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80",
         desc: "Whether your vehicle is stuck in a ditch, bogged in mud after rains, or stranded with mechanical failure, our recovery crews arrive fast with the right equipment. We use professional winching systems and recovery straps to extract vehicles without causing additional damage.",
         features: [
           "Off-road and on-road vehicle extraction",
@@ -320,7 +320,7 @@ const siteData = {
         iconName: "Warning",
         title: "Accident Recovery",
         slug: "accident-recovery",
-        image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80",
+        image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80",
         desc: "Accident scenes require speed, sensitivity, and expertise. Our teams are trained in accident scene management, working alongside emergency services to safely recover damaged vehicles while preserving evidence for insurance claims.",
         features: [
           "Rapid response to accident scenes",
@@ -350,7 +350,7 @@ const siteData = {
         iconName: "Wrench",
         title: "Tire Change",
         slug: "tire-change",
-        image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80",
+        image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80",
         desc: "A flat tire on a busy highway is not just inconvenient, it is dangerous. Our roadside assistance team arrives quickly to swap your flat for the spare, or if your spare is not viable, we tow you to the nearest tire shop.",
         features: [
           "Roadside tire swaps with your spare",

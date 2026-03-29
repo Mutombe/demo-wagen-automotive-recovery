@@ -116,7 +116,7 @@ function SearchModal({ isOpen, onClose }) {
             animate={{ scale: 1, opacity: 1, y: 0 }}
             exit={{ scale: 0.95, opacity: 0, y: -20 }}
             transition={{ duration: 0.2 }}
-            className="bg-white rounded-2xl shadow-2xl w-full max-w-xl overflow-hidden"
+            className="bg-white rounded-none shadow-2xl w-full max-w-xl overflow-hidden"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Search Input */}
@@ -166,7 +166,7 @@ function SearchModal({ isOpen, onClose }) {
                             onClick={() => handleSelect(item)}
                             className="w-full flex items-center gap-3 px-5 py-3 hover:bg-earth-50 transition-colors text-left group"
                           >
-                            <div className="w-9 h-9 bg-earth-50 group-hover:bg-gold-50 rounded-lg flex items-center justify-center shrink-0 transition-colors">
+                            <div className="w-9 h-9 bg-earth-50 group-hover:bg-gold-50 rounded-none flex items-center justify-center shrink-0 transition-colors">
                               <item.icon size={18} className="text-steel-500 group-hover:text-gold-600 transition-colors" />
                             </div>
                             <div className="flex-1 min-w-0">

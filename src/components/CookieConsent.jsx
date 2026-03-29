@@ -52,9 +52,9 @@ function CookieConsent() {
             transition={{ type: 'spring', damping: 25, stiffness: 200 }}
             className="fixed bottom-0 left-0 right-0 z-[60] p-4 sm:p-6"
           >
-            <div className="max-w-4xl mx-auto bg-navy-900 border border-white/10 rounded-2xl p-6 shadow-2xl">
+            <div className="max-w-4xl mx-auto bg-navy-900 border border-white/10 rounded-none p-6 shadow-2xl">
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-gold-500/20 rounded-xl flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 bg-gold-500/20 rounded-none flex items-center justify-center shrink-0">
                   <Cookie size={24} className="text-gold-400" />
                 </div>
                 <div className="flex-1">
@@ -71,13 +71,13 @@ function CookieConsent() {
               <div className="flex flex-wrap gap-3 mt-4 ml-14">
                 <button
                   onClick={acceptCookies}
-                  className="bg-gold-500 hover:bg-gold-400 text-white px-6 py-2 rounded-lg text-sm font-medium transition-colors"
+                  className="bg-gold-500 hover:bg-gold-400 text-white px-6 py-2 rounded-none text-sm font-medium transition-colors"
                 >
                   Accept All
                 </button>
                 <button
                   onClick={declineCookies}
-                  className="bg-white/10 hover:bg-white/20 text-white px-6 py-2 rounded-lg text-sm font-medium transition-colors"
+                  className="bg-white/10 hover:bg-white/20 text-white px-6 py-2 rounded-none text-sm font-medium transition-colors"
                 >
                   Decline
                 </button>
@@ -107,7 +107,7 @@ function CookieConsent() {
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
-              className="bg-white rounded-2xl max-w-2xl w-full max-h-[80vh] overflow-y-auto shadow-2xl"
+              className="bg-white rounded-none max-w-2xl w-full max-h-[80vh] overflow-y-auto shadow-2xl"
               onClick={(e) => e.stopPropagation()}
             >
               <div className="sticky top-0 bg-white border-b border-gray-100 px-6 py-4 flex items-center justify-between rounded-t-2xl">
@@ -119,7 +119,7 @@ function CookieConsent() {
                 </div>
                 <button
                   onClick={() => setShowPrivacy(false)}
-                  className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+                  className="p-2 hover:bg-gray-100 rounded-none transition-colors"
                   aria-label="Close"
                 >
                   <X size={20} className="text-gray-500" />
@@ -193,7 +193,7 @@ function CookieConsent() {
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
-              className="bg-white rounded-2xl max-w-2xl w-full max-h-[80vh] overflow-y-auto shadow-2xl"
+              className="bg-white rounded-none max-w-2xl w-full max-h-[80vh] overflow-y-auto shadow-2xl"
               onClick={(e) => e.stopPropagation()}
             >
               <div className="sticky top-0 bg-white border-b border-gray-100 px-6 py-4 flex items-center justify-between rounded-t-2xl">
@@ -205,7 +205,7 @@ function CookieConsent() {
                 </div>
                 <button
                   onClick={() => setShowCookiePolicy(false)}
-                  className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+                  className="p-2 hover:bg-gray-100 rounded-none transition-colors"
                   aria-label="Close"
                 >
                   <X size={20} className="text-gray-500" />

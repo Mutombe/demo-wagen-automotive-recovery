@@ -80,7 +80,7 @@ function Projects() {
                 >
                   <button
                     onClick={() => setSelectedProject(project)}
-                    className="group block w-full text-left rounded-2xl overflow-hidden bg-earth-50 border border-earth-100 hover:shadow-xl transition-shadow"
+                    className="group block w-full text-left rounded-none overflow-hidden bg-earth-50 border border-earth-100 hover:shadow-xl transition-shadow"
                   >
                     <div className="relative aspect-[4/3] overflow-hidden">
                       <img
@@ -132,7 +132,7 @@ function Projects() {
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
-              className="bg-white rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl"
+              className="bg-white rounded-none max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl"
               onClick={(e) => e.stopPropagation()}
             >
               <div className="relative">
@@ -179,7 +179,7 @@ function Projects() {
                     {selectedProject.services.map((s) => (
                       <span
                         key={s}
-                        className="bg-earth-50 text-steel-600 text-sm px-3 py-1.5 rounded-lg border border-earth-100"
+                        className="bg-earth-50 text-steel-600 text-sm px-3 py-1.5 rounded-none border border-earth-100"
                       >
                         {s}
                       </span>

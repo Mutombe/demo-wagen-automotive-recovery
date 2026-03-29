@@ -31,11 +31,11 @@ function WhatsAppFloat() {
             initial={{ opacity: 0, x: 10, scale: 0.9 }}
             animate={{ opacity: 1, x: 0, scale: 1 }}
             exit={{ opacity: 0, x: 10, scale: 0.9 }}
-            className="bg-white rounded-2xl shadow-2xl shadow-black/15 p-4 max-w-[220px] border border-earth-100 relative"
+            className="bg-white rounded-none shadow-2xl shadow-black/15 p-4 max-w-[220px] border border-earth-100 relative"
           >
             <button
               onClick={() => setTooltip(false)}
-              className="absolute -top-2 -right-2 w-5 h-5 bg-steel-200 rounded-full flex items-center justify-center hover:bg-steel-300 transition-colors"
+              className="absolute -top-2 -right-2 w-5 h-5 bg-steel-200 rounded-none flex items-center justify-center hover:bg-steel-300 transition-colors"
             >
               <X size={10} className="text-steel-600" />
             </button>
@@ -53,12 +53,12 @@ function WhatsAppFloat() {
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ type: 'spring', stiffness: 260, damping: 20 }}
-        className="relative w-14 h-14 bg-green-500 hover:bg-green-400 rounded-full flex items-center justify-center shadow-lg shadow-green-500/30 hover:shadow-xl hover:shadow-green-500/40 transition-all hover:-translate-y-0.5 group"
+        className="relative w-14 h-14 bg-green-500 hover:bg-green-400 rounded-none flex items-center justify-center shadow-lg shadow-green-500/30 hover:shadow-xl hover:shadow-green-500/40 transition-all hover:-translate-y-0.5 group"
         aria-label="Chat on WhatsApp"
       >
         <WhatsappLogo size={28} weight="fill" className="text-white" />
         {/* Pulse ring */}
-        <span className="absolute inset-0 rounded-full bg-green-500 animate-ping opacity-20" />
+        <span className="absolute inset-0 rounded-none bg-green-500 animate-ping opacity-20" />
       </motion.a>
     </div>
   );
