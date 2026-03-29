@@ -78,7 +78,7 @@ function UtilityBar({ business, visible }) {
                 onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(255,255,255,0.6)'}
               >
                 <Phone size={12} weight="bold" />
-                <span className="hidden xs:inline">{business.phone}</span>
+                <span className="text-[10px] sm:text-xs">{business.phone}</span>
               </a>
             )}
             {business.email && (
@@ -103,7 +103,7 @@ function UtilityBar({ business, visible }) {
             )}
           </div>
 
-          {hasSocials && (
+          {(
             <div className="flex items-center gap-2">
               {Object.entries(socials).map(([platform, url]) => {
                 if (!url || url === '#') return null;

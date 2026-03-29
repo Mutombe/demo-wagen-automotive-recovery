@@ -1,15 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { X } from '@phosphor-icons/react';
 
-/**
- * DemoBanner — thin bar above navigation.
- * Uses HARDCODED colors (not CSS variables) so brand color injection
- * cannot override it. Always shows as a neutral dark bar.
- */
 function DemoBanner() {
   const [dismissed, setDismissed] = useState(false);
 
-  // Set CSS custom property for navbar offset
   useEffect(() => {
     const updateHeight = () => {
       const el = document.getElementById('demo-banner');
@@ -59,7 +53,7 @@ function DemoBanner() {
       </span>
       <button
         onClick={() => setDismissed(true)}
-        className="absolute right-2 top-1/2 -translate-y-1/2 p-1 rounded transition-colors"
+        className="absolute right-2 top-1/2 -translate-y-1/2 p-1 transition-colors"
         style={{ color: '#999' }}
         onMouseEnter={(e) => (e.target.style.backgroundColor = 'rgba(255,255,255,0.1)')}
         onMouseLeave={(e) => (e.target.style.backgroundColor = 'transparent')}
